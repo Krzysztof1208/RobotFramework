@@ -1,60 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-30T15:50:30.937414" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-30T18:44:08.275806" rpa="false" schemaversion="5">
 <suite id="s1" name="Crm" source="C:\development\robotScripts\crm\pythonProject1\tests\crm.robot">
 <test id="s1-t1" name="The user should be able to add a new customer" line="11">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.2s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-01-30T15:50:31.090526" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-30T18:44:08.428638" elapsed="0.000000"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-01-30T15:50:31.090526" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-30T18:44:08.429705" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-01-30T15:50:31.091527" level="INFO">Starting the test case!</msg>
+<msg time="2024-01-30T18:44:08.430723" level="INFO">Starting the test case!</msg>
 <arg>Starting the test case!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-01-30T15:50:31.091527" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-30T18:44:08.429705" elapsed="0.001028"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-30T15:50:31.091527" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm'.</msg>
+<msg time="2024-01-30T18:44:08.430733" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm'.</msg>
 <arg>https://automationplayground.com/crm</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-30T15:50:31.091527" elapsed="2.899646"/>
+<status status="PASS" start="2024-01-30T18:44:08.430733" elapsed="3.362903"/>
 </kw>
 <kw name="Set Window Position" owner="SeleniumLibrary">
 <arg>x=341</arg>
 <arg>y=0</arg>
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2024-01-30T15:50:33.991173" elapsed="0.312471"/>
+<status status="PASS" start="2024-01-30T18:44:11.793636" elapsed="0.316470"/>
 </kw>
 <kw name="Set Window Size" owner="SeleniumLibrary">
 <arg>width=1935</arg>
 <arg>height=1098</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2024-01-30T15:50:34.303644" elapsed="0.321839"/>
+<status status="PASS" start="2024-01-30T18:44:12.110106" elapsed="0.313357"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-30T18:44:12.836311" level="INFO">Current page contains text 'Customers Are Priority One!'.</msg>
+<arg>Customers Are Priority One!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-30T18:44:12.423463" elapsed="0.412848"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-01-30T18:44:12.836311" level="INFO">Clicking link 'name=sign-in-link'.</msg>
+<arg>name=sign-in-link</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-30T18:44:12.836311" elapsed="0.867660"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-30T18:44:14.117029" level="INFO">Current page contains text 'Login'.</msg>
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-30T18:44:13.703971" elapsed="0.413058"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-30T18:44:14.118089" level="INFO">Typing text 'admin@robotframeworktutorial.com' into text field 'id=email-id'.</msg>
+<arg>id=email-id</arg>
+<arg>admin@robotframeworktutorial.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-30T18:44:14.117029" elapsed="0.678131"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-30T18:44:14.795160" level="INFO">Typing text 'password' into text field 'id = password'.</msg>
+<arg>id = password</arg>
+<arg>password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-30T18:44:14.795160" elapsed="0.659016"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-30T18:44:15.454176" level="INFO">Clicking button 'Submit'.</msg>
+<arg>Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-30T18:44:15.454176" elapsed="1.015723"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-30T15:50:37.625615" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-01-30T18:44:19.470317" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-30T15:50:34.625483" elapsed="3.000132"/>
+<status status="PASS" start="2024-01-30T18:44:16.469899" elapsed="3.000418"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-01-30T15:50:37.625615" elapsed="2.289502"/>
+<status status="PASS" start="2024-01-30T18:44:19.470317" elapsed="2.299206"/>
 </kw>
 <doc>This is some basic information about the TEST</doc>
 <tag>007</tag>
 <tag>Contacts</tag>
 <tag>Smoke</tag>
-<status status="PASS" start="2024-01-30T15:50:31.089471" elapsed="8.826849"/>
+<status status="PASS" start="2024-01-30T18:44:08.428117" elapsed="13.341406"/>
 </test>
 <doc>This is some basic information about the whole suite</doc>
-<status status="PASS" start="2024-01-30T15:50:30.939420" elapsed="8.977895"/>
+<status status="PASS" start="2024-01-30T18:44:08.276863" elapsed="13.493717"/>
 </suite>
 <statistics>
 <total>
